@@ -36,6 +36,10 @@ footer, header{
     width: 100%;
 }
 
+.m-0{
+    margin: 0;
+}
+
 footer{
     position: fixed;
     bottom: 0;
@@ -93,7 +97,7 @@ span{
 }
 
 @media screen and (max-width: 768px) {
-    header{
+    header,footer{
         height: auto;
         padding: 10px 0;
     }

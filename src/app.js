@@ -30,7 +30,7 @@ app.get('', (req, res) => {
     res.render('index', {
         title:"Dynamic Content",
         name: 'Bhuvan_S',
-        author: 'Node js'
+        tech: 'Node js'
     });
 });
 
@@ -39,7 +39,8 @@ app.get('/about', (req, res) => {
 
     res.render('about', {
         message: "This is message from Node Js dynamically",
-        author: 'Node js'
+        tech: 'Node js',
+        name: 'Bhuvan_S',
     });
 });
 
@@ -50,7 +51,7 @@ app.get('/help', (req, res) => {
         helpText: "Help message",
         title: "Help",
         name: "Bhuvan_S",
-        author: "Node js"
+        tech: "Node js"
     });
 });
 
@@ -107,6 +108,8 @@ app.get('/help/*', (req, res) => {
     res.render('data', {
         helpText: "This is Weather Applications",
         title: "Help",
+        name: 'Bhuvan_S',
+        tech: "Node js"
     });
 });
 
