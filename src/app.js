@@ -30,7 +30,7 @@ app.get('', (req, res) => {
     res.render('index', {
         title:"Dynamic Content",
         name: 'Bhuvan_S',
-        tech: 'Node js'
+        author: 'Node js'
     });
 });
 
@@ -50,7 +50,7 @@ app.get('/help', (req, res) => {
         helpText: "Help message",
         title: "Help",
         name: "Bhuvan_S",
-        author: 'Node js'
+        author: "Node js"
     });
 });
 
