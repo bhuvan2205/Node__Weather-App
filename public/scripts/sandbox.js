@@ -16,7 +16,7 @@ document.querySelector('form').addEventListener('submit', (e)=> {
             document.querySelector('#error-message').innerHTML = "Please provide valid Address..";
         }
         
-        fetch(`http://localhost:3000/weather?address=${input}`).then((response)=> {
+        fetch(`/weather?address=${input}`).then((response)=> {
     
             response.json().then(data => {
     
