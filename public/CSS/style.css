@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #dedede;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    height: 100%;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+h1{
+    color: crimson;
+}
+
+footer, header{
+    background: #a89595;
+    padding: 20px;
+    text-align: center;
+    height: 10vh;
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+form{
+    margin: 50px 0;
+}
+
+input{
+    padding: 15px 20px ;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    width: 300px;
+}
+.content{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: column;
+}
+button{
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    width: 100px;
+    border: none;
+    background: #e97979;
+    font-size: 1.1rem;
+}
+
+p{
+    margin: 50px 0;
+}
+
+h3, h4, h5{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.spinner{
+    height: 50px;
+    width: 50px;
+    display: none;
+    position: absolute;
+}
+img{
+    max-width: 100%;
+}
+
+span{
+    color: #e97979;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+        height: auto;
+        padding: 10px 0;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    .links a{
+        margin: 10px 0;
+    }
+    .lang{
+        display: none;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App.com</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    {{>header}}
+
+    <div class="content">
+
+        <form>
+            <input type="text" placeholder="Enter Address">
+            <button>Search</button>
+        </form>
+
+        <span class="spinner">
+            <img src="./img/spinner.gif" alt="">
+        </span>
+
+        <h3 id="location"></h3>
+        <h4 id="weather"></h4>
+        <h5 id="error-message"></h5>
+
+        <p>Created by {{name}}</p>
+
+    </div>
+
+    {{>footer}}
+    
+    <script src="./scripts/sandbox.js"></script>
+
+</body>
+
+</html>
+
+
